@@ -1,0 +1,146 @@
+.slider {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+     background-color: #f0f4f9;
+     height: 100vh;
+     padding: 77px 20px 10px 20px;
+     position:absolute;
+     z-index: 10;
+     width: 300px;
+   
+     .new_chat_btn{
+       padding: 10px;
+       background-color: #eee;
+       height: 40px;
+       width: 100%;
+       padding: 10px;
+       border-radius: 10px;
+       display: flex;
+       gap: 10px;
+       justify-content: center;
+       align-items: center;
+       margin-left: 10px;
+       svg{
+         font-size: 30px;
+       }
+       cursor: pointer;
+     }
+   
+     .slider_tasks {
+       display: flex;
+       flex-direction: column;
+       gap: 6px;
+       overflow-y: auto;
+   
+       p {
+         font-weight: 500;
+       }
+       .tasks {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         gap: 10px;
+   
+         a {
+           text-decoration: none;
+           display: flex;
+           gap: 20px;
+           align-items: center;
+           width: 100%;
+           padding: 10px 20px;
+           border-radius: 20px;
+           transition: all 0.4s;
+   
+           svg {
+             color: #353535;
+             font-size: 20px;
+           }
+           span {
+             color: #4b4b4b;
+           }
+   
+           .hide {
+             display: none;
+           }
+   
+           &:hover {
+             background-color: #e0e0e0;
+            
+             transition: all 0.4s;
+           
+           }
+         }
+       }
+     }
+   
+     .slider_bottom ,.sliderActive{
+       display: flex;
+       flex-direction: column;
+       ul {
+         li {
+           width: 100%;
+           border-radius: 20px;
+           display: flex;
+           gap: 20px;
+           list-style: none;
+           cursor: pointer;
+           width: 100%;
+           padding: 10px 20px;
+           transition: all 0.4s;
+           &:hover {
+             background-color: #e0e0e0;
+             transition: all 0.4s;
+           }
+   
+           svg {
+             color: #353535;
+             font-size: 20px;
+           }
+         }
+       }
+   
+       
+   
+   
+       button{
+           border-radius: 7px;
+           height: 40px;
+           background-color: #e0e0e0;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           gap: 20px;
+           border: none;
+           cursor: pointer;
+   
+           &:hover{
+           opacity: 0.5;
+           transition: all 0.4s;
+           }
+           svg{
+         color: #CC5F75;
+           }
+           
+   
+           
+       }
+       .para{
+           margin-top: 20px;
+       }
+       .active{
+           margin-top:8px ;
+           color: #001ec7ee;
+           cursor: pointer;
+       }
+     }
+     .sliderActive{
+       position: absolute;
+       bottom: 20px;
+       ul{
+         li{
+           width: auto;
+         }
+       }
+     }
+   }

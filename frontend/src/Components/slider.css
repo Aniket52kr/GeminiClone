@@ -1,0 +1,151 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: #f0f4f9;
+  height: 100vh;
+  padding: 77px 20px 10px 20px;
+  position: absolute;
+  z-index: 10;
+  width: 300px;
+}
+
+.slider .new_chat_btn {
+  padding: 10px;
+  background-color: #eee;
+  height: 40px;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.slider .new_chat_btn svg {
+  font-size: 30px;
+}
+
+.slider .slider_tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  overflow-y: auto;
+}
+
+.slider .slider_tasks p {
+  font-weight: 500;
+}
+
+.slider .slider_tasks .tasks {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.slider .slider_tasks .tasks a {
+  text-decoration: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: all 0.4s;
+}
+
+.slider .slider_tasks .tasks a svg {
+  color: #353535;
+  font-size: 32px;
+}
+
+.slider .slider_tasks .tasks a span {
+  color: #4b4b4b;
+}
+
+.slider .slider_tasks .tasks a .hide {
+  display: none;
+}
+
+.slider .slider_tasks .tasks a:hover {
+  background-color: #e0e0e0;
+  transition: all 0.4s;
+}
+
+.slider .slider_bottom,
+.slider .sliderActive {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider .slider_bottom ul li,
+.slider .sliderActive ul li {
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: all 0.4s;
+}
+
+.slider .slider_bottom ul li:hover,
+.slider .sliderActive ul li:hover {
+  background-color: #e0e0e0;
+  transition: all 0.4s;
+}
+
+.slider .slider_bottom ul li svg,
+.slider .sliderActive ul li svg {
+  color: #353535;
+  font-size: 20px;
+}
+
+.slider .slider_bottom button,
+.slider .sliderActive button {
+  border-radius: 7px;
+  height: 40px;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.slider .slider_bottom button:hover,
+.slider .sliderActive button:hover {
+  opacity: 0.5;
+  transition: all 0.4s;
+}
+
+.slider .slider_bottom button svg,
+.slider .sliderActive button svg {
+  color: #cc5f75;
+}
+
+.slider .slider_bottom .para,
+.slider .sliderActive .para {
+  margin-top: 20px;
+}
+
+.slider .slider_bottom .active,
+.slider .sliderActive .active {
+  margin-top: 8px;
+  color: #001ec7ee;
+  cursor: pointer;
+}
+
+.slider .sliderActive {
+  position: absolute;
+  bottom: 20px;
+}
+
+.slider .sliderActive ul li {
+  width: auto;
+}

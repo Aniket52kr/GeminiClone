@@ -1,4 +1,4 @@
-import "../Main/main.scss";
+import "../Main/main.css";
 import { useLocation } from "react-router-dom";
 import { FiSend } from "react-icons/fi";
 import { useEffect, useState } from "react";
@@ -19,7 +19,7 @@ const Main = () => {
   const { loading, oneData } = useSelector(
     (state: RootType) => state.geminiSlice
   );
-  const { oneUer, loading: userLoading } = useSelector(
+  const { oneUser, loading: userLoading } = useSelector(
     (state: RootType) => state.fetchUserSlice
   );
 
@@ -64,7 +64,7 @@ const Main = () => {
           <div className="main_head">
             <p>Gemini</p>
             <img
-              src={oneUer?.photo}
+              src={oneUser?.photo}
               alt="photo"
               className="profile"
               onClick={hideBtnHandler}
@@ -78,7 +78,7 @@ const Main = () => {
           <div className="result">
             {oneData?.result?.heading && (
               <div className="result_title">
-                <img src={oneUer?.photo} className="profile" />
+                <img src={oneUser?.photo} className="profile" />
                 <p>{oneData?.result?.heading}</p>
               </div>
             )}

@@ -1,4 +1,4 @@
-import './loader.scss';
+import './loader.css';
 
 const Loader = () => {
     const arr = new Array(6).fill(1);

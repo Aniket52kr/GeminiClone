@@ -25,7 +25,7 @@ app.use(cors({
 app.use((req, res, next) => {
     res.setHeader('Cross-Origin-Opener-Policy', 'same-origin-allow-popups');
     next();
-  });
+});
 
 // Root route
 app.get('/', (req, res) => {
@@ -35,6 +35,15 @@ app.get('/', (req, res) => {
 // Routers
 app.use('/api-v1/result', resultRouter);
 app.use('/api-v1/user', userRouter);
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).json({
+        success: false,
+        message: 'Something went wrong!',
+    });
+});
 
 // Start the server
 app.listen(port, () => {

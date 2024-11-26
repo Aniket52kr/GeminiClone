@@ -1,0 +1,124 @@
+.login {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  flex-direction: column;
+}
+
+.login .titleAndICon {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.login .titleAndICon img {
+  height: 100px;
+  object-fit: cover;
+  width: 100px;
+  border-radius: 100%;
+}
+
+.login form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+}
+
+.login form label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login form label p {
+  font-weight: 500;
+}
+
+.login form label input {
+  width: 400px;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  cursor: pointer;
+  background-color: #f5f5f5;
+}
+
+.login form input[type="submit"],
+.login form .googleBtn,
+.login form .guest {
+  width: 400px;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  cursor: pointer;
+  background-color: #7252ef;
+  color: #fff;
+  box-shadow: 2px 1px 7px #b3b3b3b4;
+}
+
+.login form .googleBtn {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #7252ef;
+  box-shadow: 2px 1px 7px #b3b3b3b4;
+  margin-top: 50px;
+}
+
+.login form .googleBtn img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.login form .googleBtn p {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.login form .guest {
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+}
+
+.login form a {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 550px) {
+  .login form {
+    width: 100%;
+    align-items: center;
+  }
+
+  .login form label {
+    align-items: center;
+    width: 100%;
+  }
+
+  .login form label p {
+    margin-left: 20px;
+    align-self: flex-start;
+  }
+
+  .login form label input {
+    width: 90%;
+  }
+
+  .login form input[type="submit"],
+  .login form .googleBtn,
+  .login form .guest {
+    width: 90%;
+  }
+}

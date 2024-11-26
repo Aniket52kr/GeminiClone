@@ -4,13 +4,13 @@ import { getAuth } from "firebase/auth";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBOw7VyBxqjbJAEVaSZMUbrDWzd15B1zH0",
+  apiKey: "AIzaSyBTcy01DAE52ojcN5ZjTtFtqA-mT8FrAZ4",
   authDomain: "gemini-clone-b80be.firebaseapp.com",
   projectId: "gemini-clone-b80be",
   storageBucket: "gemini-clone-b80be.appspot.com",
   messagingSenderId: "309924489511",
-  appId: "1:309924489511:web:370b8a56e6fbab6c1ae102",
-  measurementId: "G-EXN5SNCCX4"
+  appId: "1:309924489511:web:8293dd28c300713d1ae102",
+  measurementId: "G-KDN3HTHYXX"
 };
 
 // Initialize Firebase

@@ -1,5 +1,5 @@
 import { FormEvent, useEffect, useState } from "react";
-import "./login.scss";
+import "./login.css";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth } from "../../Firebase/Firebase";
 import { useDispatch, useSelector } from "react-redux";
@@ -146,3 +146,6 @@ const Login = () => {
 };
 
 export default Login;
+
+
+

@@ -21,7 +21,10 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* TypeScript type definition resolution */
+    "types": ["node", "@types/babel__core"]  // Include node and babel types
   },
   "include": ["src"]
 }

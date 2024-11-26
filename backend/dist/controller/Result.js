@@ -1,4 +1,5 @@
 import { Result } from "../models/Result.js";
+
 export const setData = async (req, res) => {
     try {
         let { heading, data, user } = req.body;
@@ -46,6 +47,9 @@ export const setData = async (req, res) => {
         });
     }
 };
+
+
+
 export const getData = async (req, res) => {
     try {
         const user = req.params.user;
@@ -70,6 +74,9 @@ export const getData = async (req, res) => {
         });
     }
 };
+
+
+
 export const getSingleData = async (req, res) => {
     try {
         const id = req.params.id;

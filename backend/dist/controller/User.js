@@ -1,4 +1,5 @@
 import { User } from "../models/User.js";
+
 // register
 export const newUser = async (req, res) => {
     try {
@@ -35,6 +36,8 @@ export const newUser = async (req, res) => {
         });
     }
 };
+
+
 // login user
 export const getUser = async (req, res) => {
     try {
@@ -59,6 +62,9 @@ export const getUser = async (req, res) => {
         });
     }
 };
+
+
+
 export const isExist = async (req, res) => {
     try {
         const { uid } = req.body;

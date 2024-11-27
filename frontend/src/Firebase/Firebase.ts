@@ -6,7 +6,7 @@ import { getAuth } from "firebase/auth";
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_KEY,
   authDomain: import.meta.env.VITE_FIREBASE_DOMAIN,
-  databaseURL: import.meta.env.VITE_DATABASE_URL,
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE,
   projectId: import.meta.env.VITE_FIREBASE_PROJECT,
   storageBucket: import.meta.env.VITE_FIREBASE_STORAGE,
   messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING,

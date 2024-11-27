@@ -4,13 +4,14 @@ import { getAuth } from "firebase/auth";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBTcy01DAE52ojcN5ZjTtFtqA-mT8FrAZ4",
-  authDomain: "gemini-clone-b80be.firebaseapp.com",
-  projectId: "gemini-clone-b80be",
-  storageBucket: "gemini-clone-b80be.appspot.com",
-  messagingSenderId: "309924489511",
-  appId: "1:309924489511:web:8293dd28c300713d1ae102",
-  measurementId: "G-KDN3HTHYXX"
+  apiKey: import.meta.env.VITE_FIREBASE_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_DOMAIN,
+  databaseURL: import.meta.env.VITE_DATABASE_URL,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
